@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #121212; /* Dark background for the page */
+            color: #e0e0e0; /* Light text color */
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            background-color: #1e1e1e; /* Dark background for the form */
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #e0e0e0; /* Light text color for labels */
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #555;
+            border-radius: 4px;
+            background-color: #333; /* Dark background for input fields */
+            color: #e0e0e0; /* Light text color for input fields */
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://formsubmit.co/yadiel.quinones@artisoftlabs.com" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required><br>
+       
+        <label for="address">Physical Address:</label>
+        <input type="text" id="address" name="address" required><br>
+        
+        <label for="pobox">PO Box:</label>
+        <input type="text" id="pobox" name="pobox"><br>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+        
+        <label for="emergency-name">Emergency Contact Name:</label>
+        <input type="text" id="emergency-name" name="emergency-name" required><br>
+        
+        <label for="emergency-phone">Emergency Contact Phone:</label>
+        <input type="tel" id="emergency-phone" name="emergency-phone" required><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+        
+        <label for="marital-status">Marital Status:</label>
+        <select id="marital-status" name="marital-status" required>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="divorced">Divorced</option>
+            <option value="widowed">Widowed</option>
+        </select><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
